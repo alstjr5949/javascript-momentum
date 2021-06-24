@@ -2,6 +2,7 @@
 
 JavaScript is So funny
 
+```
 // JavaScript is very flexible
 // flexible === dangerous
 // added ECNAScript 5
@@ -85,3 +86,4 @@ const plusResult = calculator.plus(1,2);
 const minusResult = calculator.minus(plusResult,2);
 const divideResult = calculator.divide(minusResult,plusResult);
 const powerResult = calculator.byThePower(divideResult,minusResult);
+```
