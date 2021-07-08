@@ -32,7 +32,9 @@ body {
 }
 
 #clock {
-  font-size: 40px;
+  font-size: 50px;
+  color: black;
+  text-shadow: 1px 1px 2px grey;
 }
 
 #quote {
@@ -62,6 +64,21 @@ body {
   text-align: center;
   font-size: 20px;
   font-weight: 600;
+}
+
+.login-form__white {
+  border-bottom: 2px solid white;
+}
+
+.login-form__white input {
+  color: white;
+}
+
+.login-form__white input::placeholder {
+  color: white;
+}
+
+.login-form__black input::placeholder {
   color: black;
 }
 
@@ -75,12 +92,13 @@ body {
   right: 0;
   padding-left: 10px;
   height: 220px;
-  background: white;
-  opacity: 0.8;
+  background: #8c7b75;
+  opacity: 0.6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  color: black;
 }
 
 #todo-form input {
@@ -89,4 +107,62 @@ body {
   width: 180px;
   height: 30px;
   font-size: 12px;
+}
+
+#todo-form input::placeholder {
+  color: black;
+}
+
+.lightbtn_theme {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 100;
+  background-color: #333638;
+  color: #c3c9d2;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 1px 1px 2px grey;
+}
+
+.lightbtn_theme:hover {
+  background-color: #757575;
+}
+.lightbtn_theme:hover i {
+  color: #ffa726;
+}
+
+.darkbtn_theme {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 100;
+  background-color: white;
+  color: #5e6266;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 1px 1px 2px grey;
+}
+
+.darkbtn_theme:hover {
+  background-color: #424242;
+  color: white;
+}
+
+.darkbtn_theme:hover i {
+  color: #fff176;
 }
