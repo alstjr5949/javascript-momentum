@@ -14,7 +14,11 @@
         <span class="hidden"><i class="fas fa-moon"></i></span>
         <span>Light Mode</span>
     </button>
-    <form id="login-form" class="hidden">
+    <button id="naturemode_btn" type="button" role="button" class="naturebtn_light_theme">
+        <span><i class="fas fa-tree"></i></span>
+        <span>Nature Mode</span>
+    </button>
+    <form id="login-form" class="login-form__black hidden">
         <input required maxlength="15" type="text" placeholder="Write your name">
     </form>
     <h2 id="clock">00:00:00</h2>
@@ -24,6 +28,12 @@
         <ul id="todo-list"></ul>
         <form id="todo-form">
             <input type="text" placeholder="Write a To Do and Press Enter .">
+        </form>
+    </div>
+    <div class="search__container">
+        <form action="https://www.google.com/webhp" method="GET">
+            <span><i class="fas fa-search"></i></span>        
+            <input type="text" class="search-bar">
         </form>
     </div>
     <div id="quote">

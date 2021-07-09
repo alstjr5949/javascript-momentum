@@ -37,12 +37,19 @@ body {
   text-shadow: 1px 1px 2px grey;
 }
 
+#greeting {
+  text-shadow: 1px 1px 2px grey;
+}
+
 #quote {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+}
+
+#quote span:first-child {
+  margin-right: 10px;
 }
 
 #login-form input {
@@ -165,4 +172,94 @@ body {
 
 .darkbtn_theme:hover i {
   color: #fff176;
+}
+
+.naturebtn_light_theme {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  position: fixed;
+  top: 10px;
+  right: 120px;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 100;
+  background-color: #333638;
+  color: #c3c9d2;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 1px 1px 2px grey;
+}
+
+.naturebtn_light_theme:hover {
+  background-color: #757575;
+}
+.naturebtn_light_theme:hover i {
+  color: #43a047;
+}
+
+.naturebtn_dark_theme {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  position: fixed;
+  top: 10px;
+  right: 120px;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 100;
+  background-color: white;
+  color: #5e6266;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 1px 1px 2px grey;
+}
+
+.naturebtn_dark_theme:hover {
+  background-color: #424242;
+  color: white;
+}
+.naturebtn_dark_theme:hover i {
+  color: #43a047;
+}
+
+#weather {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.search-bar {
+  width: 450px;
+  height: 40px;
+  border-radius: 30px;
+  padding: 0px 40px;
+  border: 1px solid #dee1e5;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  opacity: 0.9;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.search-bar:hover {
+  box-shadow: 0px 0px 5px grey;
+}
+
+.fa-search {
+  color: #9ca1a6;
+  position: absolute;
+  top: 33px;
+  left: 15px;
+  z-index: 2;
+}
+
+.search__container {
+  position: relative;
 }

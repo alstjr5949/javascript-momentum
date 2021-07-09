@@ -1,18 +1,15 @@
 const imges =["0.jpeg", "1.jpeg", "3.jpeg", "5.jpeg",];
-
 const chosenImage = imges[Math.floor(Math.random() * imges.length)];
-
 const bgImage = document.createElement("img");
 
 bgImage.src = `img/${chosenImage}`;
-
 document.body.append(bgImage);
-
 bgImage.classList.add("bgSize");
 
 const toggleBtn = document.querySelector("#changemode_btn");
+const natureBtn = document.querySelector("#naturemode_btn");
 
-function handleBtnClick(){
+function handleToggleBtnClick(){
   toggleButton(toggleBtn);
   bgImage.classList.add("hidden");
 }
@@ -36,6 +33,8 @@ function toggleButton(self){
     clock.style.color = "white";
     loginForm.classList.add("login-form__white");
     loginForm.classList.remove("login-form__black");
+    natureBtn.classList.remove("naturebtn_dark_theme");
+    natureBtn.classList.add("naturebtn_light_theme");
   } else {
     body.style.backgroundColor = "white";
     body.style.color ="black";
@@ -48,7 +47,16 @@ function toggleButton(self){
     clock.style.color = "black";
     loginForm.classList.add("login-form__black");
     loginForm.classList.remove("login-form__white");
+    natureBtn.classList.add("naturebtn_dark_theme");
+    natureBtn.classList.remove("naturebtn_light_theme");
   }
 }
 
-toggleBtn.addEventListener("click", handleBtnClick);
+function handleNatureBtnClick(){
+  bgImage.classList.remove("hidden");
+  window.location.reload();
+}
+
+toggleBtn.addEventListener("click", handleToggleBtnClick);
+
+natureBtn.addEventListener("click", handleNatureBtnClick);
