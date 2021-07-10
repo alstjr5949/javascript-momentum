@@ -23,7 +23,7 @@ function paintToDo(newTodo){
   const form = document.createElement("form");
   const input = document.createElement("input");
   input.setAttribute("type", "checkbox");
-  input.setAttribute("id","todo-box")
+  input.setAttribute("id","todo-box");
   const label = document.createElement("label");
   label.innerText = newTodo.text;
   label.setAttribute("for", "todo-box");
