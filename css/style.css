@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
+
 body {
   display: flex;
   flex-direction: column;
@@ -91,33 +93,6 @@ body {
 
 .fadein {
   animation: fadeIn 0.5s ease-in forwards;
-}
-
-.todo-container {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding-left: 10px;
-  height: 220px;
-  background: #8c7b75;
-  opacity: 0.6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  color: black;
-}
-
-#todo-form input {
-  border: none;
-  background: none;
-  width: 180px;
-  height: 30px;
-  font-size: 12px;
-}
-
-#todo-form input::placeholder {
-  color: black;
 }
 
 .lightbtn_theme {
@@ -262,4 +237,89 @@ body {
 
 .search__container {
   position: relative;
+}
+
+.todo-container {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 350px;
+  width: 250px;
+  background: white;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  box-shadow: 0px 0px 3px grey;
+}
+
+#todo-form input {
+  border: none;
+  background: none;
+  width: 220px;
+  height: 30px;
+  font-size: 12px;
+  padding-left: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#todo-form input::placeholder {
+  color: black;
+  text-align: left;
+}
+
+#todo-form input:focus {
+  outline: none;
+}
+
+.todo-text {
+  width: 250px;
+  font-family: "Yomogi", cursive;
+}
+
+.todo-text h1 {
+  text-align: center;
+  width: 260px;
+  background: black;
+  margin: 0px;
+  padding: 15px 0px;
+  color: white;
+}
+
+#todo-list {
+  width: 90%;
+  height: 200px;
+  list-style: none;
+  padding-left: 10px;
+  overflow-y: scroll;
+}
+
+#todo-list li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 5px 0px;
+}
+
+#todo-list button {
+  border: none;
+  background: none;
+  margin: 0;
+}
+
+#todo-list button:hover {
+  box-shadow: 0 0 2px grey;
+}
+
+#todo-box {
+  margin-right: 6px;
+}
+
+#todo-box:checked + label {
+  background-color: black;
+  color: white;
+  text-decoration: line-through;
 }

@@ -20,12 +20,19 @@ function deleteToDo(event){
 function paintToDo(newTodo){
   const li = document.createElement("li");
   li.id = newTodo.id;
-  const span = document.createElement("span");
-  span.innerText = newTodo.text;
+  const form = document.createElement("form");
+  const input = document.createElement("input");
+  input.setAttribute("type", "checkbox");
+  input.setAttribute("id","todo-box")
+  const label = document.createElement("label");
+  label.innerText = newTodo.text;
+  label.setAttribute("for", "todo-box");
   const button = document.createElement("button");
-  button.innerText = "❌";
+  button.innerText = "🗑";
   button.addEventListener("click", deleteToDo);
-  li.appendChild(span);
+  li.appendChild(form);
+  form.appendChild(input);
+  form.appendChild(label);
   li.appendChild(button);
   toDoList.appendChild(li);
 }
