@@ -23,14 +23,19 @@
     </form>
     <h2 id="clock">00:00:00</h2>
     <h1 id="greeting" class="hidden"></h1>
-    <div class="todo-container">
-        <div class="todo-text">
-            <h1>Todo List</h1>
-            <ul id="todo-list"></ul>
+    <button id="todo_btn" type="button" role="button" class="todo_btn_theme">
+        <span>Todo List</span>
+    </button>
+    <div id="hidden-box" class="hidden">
+        <div id="todo-container">
+            <div class="todo-text">
+                <h1>Todo List</h1>
+                <ul id="todo-list"></ul>
+            </div>
+            <form id="todo-form">
+                <input type="text" placeholder="Write a To Do and Press Enter .">
+            </form>
         </div>
-        <form id="todo-form">
-            <input type="text" placeholder="Write a To Do and Press Enter .">
-        </form>
     </div>
     <div class="search__container">
         <form action="https://www.google.com/webhp" method="GET">

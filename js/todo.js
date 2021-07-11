@@ -59,3 +59,21 @@ if(savedToDos !== null){
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
+
+const toDoBtn = document.querySelector("#todo_btn");
+const hiddenBox = document.querySelector("#hidden-box");
+const toDoH1 = document.querySelector(".todo-text h1");
+
+function toDoBtnClickHandler (){
+  hiddenBox.classList.remove("hidden");
+  toDoBtn.classList.add("hidden");
+}
+
+toDoBtn.addEventListener("click", toDoBtnClickHandler);
+
+function toDoH1ClickHandler (){
+  hiddenBox.classList.add("hidden");
+  toDoBtn.classList.remove("hidden");
+}
+
+toDoH1.addEventListener("click", toDoH1ClickHandler);

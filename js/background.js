@@ -21,6 +21,7 @@ function toggleButton(self){
   const btnText = document.querySelector("#changemode_btn span:last-child");
   const clock = document.querySelector("h2#clock");
   const loginForm = document.querySelector("#login-form");
+  const toDoBtn = document.querySelector("#todo_btn");
   if(self.value === "Dark Mode"){
     body.style.backgroundColor = "#1e1f21";
     body.style.color ="white";
@@ -35,6 +36,9 @@ function toggleButton(self){
     loginForm.classList.remove("login-form__black");
     natureBtn.classList.remove("naturebtn_dark_theme");
     natureBtn.classList.add("naturebtn_light_theme");
+    toDoBtn.style.color = "white";
+    toDoBtn.classList.add("todo_btn_dark");
+    toDoBtn.classList.remove("todo_btn_light");
   } else {
     body.style.backgroundColor = "white";
     body.style.color ="black";
@@ -49,6 +53,9 @@ function toggleButton(self){
     loginForm.classList.remove("login-form__white");
     natureBtn.classList.add("naturebtn_dark_theme");
     natureBtn.classList.remove("naturebtn_light_theme");
+    toDoBtn.style.color = "black";
+    toDoBtn.classList.add("todo_btn_light");
+    toDoBtn.classList.remove("todo_btn_dark");
   }
 }
 
