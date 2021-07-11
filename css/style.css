@@ -253,7 +253,7 @@ body {
   cursor: pointer;
 }
 
-#todo_btn:hover {
+.todo_btn_theme:hover {
   background-color: #d6cbc7;
 }
 
